@@ -1,5 +1,5 @@
 *{margin:0}
-body{font-family:'Open Sans',sans-serif;font-weight:300;color:#323e4a;background:#f2f2f2}
+body{font-family:'Open Sans',sans-serif;font-weight:300;color:#323e4a;background:#f2f2f2;font-size:16px}
 h1,h2,h3{font-weight:300}
 li{list-style:none}
 a{text-decoration:none}
@@ -18,7 +18,8 @@ a{text-decoration:none}
 .video iframe,.video video{position:absolute;top:0;left:0;height:100%;width:100%}
 .avatar{text-align:center;}
 .avatar svg{max-width:300px;height:250px}
-.image{display:inline-block}
+.image{display:inline-block;}
+.image img{max-width:100%}
 #wrapper{margin-left:420px;padding:20px;-o-animation:wrapper .7s;-ms-animation:wrapper .7s;-moz-animation:wrapper .7s;-webkit-animation:wrapper .7s;animation:wrapper .7s;position:relative;}
 #wrapper li{position:relative;}
 #wrapper li:before{position:absolute;left:-10px;content:"•"}
@@ -30,10 +31,11 @@ a{text-decoration:none}
 #wrapper .subtitle span{background:#4ad391;display:inline-block;padding:0 50px 0 5px;-webkit-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;border-bottom:2px solid #404045}
 #contratame{align-content:center;border-bottom:10px dashed #4ad391;border-top:10px dashed #4ad391;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;display:flex;margin:20px 0;padding:30px 10px;flex-wrap:wrap;text-align:center;}
 #contratame .big{font-size:30px}
-@media screen and (max-width:767px){#header{position:static;width:auto;}
+@media screen and (max-width:1000px){#header{width:300px}
+#wrapper{margin-left:340px}
+}@media screen and (max-width:767px){#header{position:static;width:auto;}
 #header .social{position:static}
 #wrapper{margin:0}
-.image img{max-width:100%}
 }@-moz-keyframes header{0%{left:-300px}
 100%{left:0}
 }@-webkit-keyframes header{0%{left:-300px}

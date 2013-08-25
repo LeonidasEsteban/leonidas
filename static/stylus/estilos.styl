@@ -9,6 +9,7 @@ body
     font-weight 300
     color #323E4A
     background #F2F2F2
+    font-size 16px
 h1
 h2
 h3
@@ -104,6 +105,8 @@ a
         height 250px
 .image
     display inline-block
+    img 
+        max-width 100%
 #wrapper
     margin-left 420px
     padding 20px
@@ -159,6 +162,12 @@ a
     to
         right 0
 
+@media screen and (max-width:1000px)
+    #header
+        width 300px
+    #wrapper
+        margin-left 340px
+
 @media screen and (max-width:767px)
     #header
         position static
@@ -169,6 +178,4 @@ a
     #wrapper
         margin 0
 
-    .image
-        img 
-            max-width 100%
+    
