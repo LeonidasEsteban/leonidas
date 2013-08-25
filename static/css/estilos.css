@@ -30,7 +30,11 @@ a{text-decoration:none}
 #wrapper .subtitle span{background:#4ad391;display:inline-block;padding:0 50px 0 5px;-webkit-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;border-bottom:2px solid #404045}
 #contratame{align-content:center;border-bottom:10px dashed #4ad391;border-top:10px dashed #4ad391;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;display:flex;margin:20px 0;padding:30px 10px;flex-wrap:wrap;text-align:center;}
 #contratame .big{font-size:30px}
-@-moz-keyframes header{0%{left:-300px}
+@media screen and (max-width:767px){#header{position:static;width:auto;}
+#header .social{position:static}
+#wrapper{margin:0}
+.image img{max-width:100%}
+}@-moz-keyframes header{0%{left:-300px}
 100%{left:0}
 }@-webkit-keyframes header{0%{left:-300px}
 100%{left:0}
