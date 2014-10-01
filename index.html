@@ -5,25 +5,9 @@
     <title>Leonidas Esteban, Front-End Web Developer</title>
     <meta name="viewport" content="width=device-width, ,minimum-scale=1, maximum-scale=1"/>
     <link rel="stylesheet" href="static/css/estilos.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300' rel='stylesheet' type='text/css'>
     
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <script type="text/javascript">
-
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-28518727-1']);
-      _gaq.push(['_setDomainName', 'leonidasesteban.com']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
+    
+    
 </head>
 
 <body>  
@@ -305,6 +289,37 @@
             
         </div>
     </section>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-28518727-1']);
+      _gaq.push(['_setDomainName', 'leonidasesteban.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Open+Sans:400,700,800,300:latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="static/js/jquery.scrollTo-1.4.2-min.js"></script>
     <script src="static/js/jquery.localscroll-1.2.7-min.js"></script>
@@ -313,6 +328,9 @@
             $('body').localScroll();
             var alto = $(window).height();
             $('#contratame').css('height', alto - 100);
+            $('.speech .link').on('click', function(){
+                 _gaq.push(['_trackEvent', 'freelo' , 'click' , 'email']);
+            });
         })
     </script>
     <script src="https://connect.facebook.net/en_US/all.js#xfbml=1"></script>
