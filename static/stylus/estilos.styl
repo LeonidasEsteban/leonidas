@@ -1,5 +1,4 @@
-vendor-prefixes = o ms moz webkit official
-@import "nib/vendor.styl"
+@import "nib"
 
 *
     margin 0
@@ -156,26 +155,35 @@ a
     text-align center
     .big
         font-size 30px
+a[href*="http://get"]
+    display none
 @keyframes wrapper
     from
         right 100%
     to
         right 0
 
-@media screen and (max-width:1000px)
++to(1000px)
     #header
         width 300px
     #wrapper
         margin-left 340px
 
-@media screen and (max-width:767px)
++to(767px)
     #header
         position static
         width auto
         .social
             position static
-
-    #wrapper
-        margin 0
-
+        .twitter
+            margin-bottom 5px
     
+    #wrapper
+        margin-left 0
+        .link
+            margin 0
+    aside
+        display none
+    .item-lista
+        padding 20px 0
+        display block
